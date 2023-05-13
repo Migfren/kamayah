@@ -1,0 +1,69 @@
+.content {
+    padding-top: -20px;
+    display: none;
+}
+
+.cardTest {
+    background: url("../assets/img/bg.png");
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 99999px rgba(141, 141, 142, 0.5);
+}
+
+.cardResult {
+    background-color: #11b962;
+}
+
+
+/*just bg and body style*/
+
+body {
+    background-color: #ffffff;
+}
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: black;
+    position: absolute;
+}
+
+.loader>div {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #030303;
+    border-top-color: #f6f6f6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+textarea {
+    border-radius: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.tableStyle {
+    padding-right: 15px;
+    margin: auto;
+}
+
+.translate_area {
+    font-size: 18px;
+}

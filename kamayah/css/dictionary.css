@@ -1,0 +1,98 @@
+.content {
+    display: none;
+}
+
+.cardTest {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 99999px rgba(141, 141, 142, 0.5);
+}
+
+.cardWordlist {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #ffffff;
+}
+
+
+/*just bg and body style*/
+
+body {
+    background-color: #d1f1d7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.loader {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #ececec;
+    position: absolute;
+}
+
+.loader>div {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #030303;
+    border-top-color: #f6f6f6;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #202020;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    height: 36px;
+}
+
+.searchTerm:focus {
+    color: #202020;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #202020;
+    background: #202020;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dtable .table button {
+    border: none;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+.dtable .table button:hover {
+    transform: scale(1.1);
+}
